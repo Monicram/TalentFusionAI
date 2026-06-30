@@ -1,309 +1,417 @@
-# TalentFusion AI
+<div align="center">
 
-A production-ready web application for **Candidate Profile Canonicalization** — transforming multi-source candidate data into one trusted, deterministic, explainable canonical profile.
+# 🚀 TalentFusion AI
 
----
+### AI-Powered Candidate Intelligence & Recruitment Automation Platform
 
-## Overview
+Transform resumes into structured candidate profiles using an intelligent multi-stage AI pipeline with confidence scoring, validation, data normalization, and analytics.
 
-Recruiters receive candidate information from multiple sources:
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker)
 
-- Resume (PDF/DOC)
-- GitHub Profile
-- LinkedIn Profile
-- Recruiter CSV
-- ATS JSON
-- Recruiter Notes
-
-These sources may contain **duplicate, conflicting, incomplete, or inconsistent** information. TalentFusion AI solves this challenge with:
-
-- **Deterministic processing** — every step is reproducible
-- **Explainable decisions** — why each value was selected
-- **Full provenance** — trace every transformation back to its source
-- **Modern recruiter dashboard** — beautiful, interactive UI
+</div>
 
 ---
 
-## Tech Stack
+# 📌 Overview
 
-### Frontend
+TalentFusion AI is an enterprise-grade recruitment intelligence platform that automatically extracts, validates, merges, and enriches candidate information from multiple sources.
 
-| Technology | Purpose |
-|------------|---------|
-| React 18 | UI framework |
-| TypeScript | Type safety |
-| Vite | Build tool |
-| Tailwind CSS | Styling |
-| shadcn/ui | Component library |
-| React Router | Routing |
-| Framer Motion | Animations |
-| Zustand | State management |
-| Recharts | Charts & analytics |
+Instead of simply parsing resumes, TalentFusion AI creates a unified candidate profile by processing information through a multi-stage AI pipeline that improves data quality, confidence, and consistency.
 
-### Backend
-
-| Technology | Purpose |
-|------------|---------|
-| FastAPI | Web framework |
-| Python 3.11 | Language |
-| SQLAlchemy | ORM |
-| PostgreSQL | Database |
-| Pydantic | Validation |
-| Alembic | Migrations |
-
-### Deployment
-
-| Technology | Purpose |
-|------------|---------|
-| Docker | Containerization |
-| Docker Compose | Orchestration |
-| Nginx | Reverse proxy |
+The system helps recruiters reduce manual effort while improving hiring decisions with structured candidate analytics.
 
 ---
 
-## Quick Start
+# ✨ Features
 
-```bash
-# Clone and start everything
-docker compose up --build
-```
+## 📄 Intelligent Resume Parsing
 
-Services will be available at:
-
-| Service | URL |
-|---------|-----|
-| Frontend | http://localhost |
-| API | http://localhost/api/v1 |
-| Swagger Docs | http://localhost/api/docs |
-| ReDoc | http://localhost/api/redoc |
+- PDF Resume Processing
+- DOCX Resume Processing
+- Automatic Candidate Information Extraction
+- Skill Detection
+- Education Extraction
+- Experience Detection
+- Contact Information Parsing
 
 ---
 
-## Architecture
+## 🧠 AI Processing Pipeline
 
-```
-Frontend (React + Vite)
-        |
-        v
-    REST API (FastAPI)
-        |
-        v
-    Controllers (Routers)
-        |
-        v
-    Services (Business Logic)
-        |
-        v
-    Pipeline Engine
-        |
-        v
-    Agents (Parsers, Mappers, Validators)
-        |
-        v
-    Repositories (SQLAlchemy)
-        |
-        v
-    PostgreSQL
-```
+The candidate information passes through multiple intelligent stages:
+
+- Source Detection
+- Resume Parsing
+- CSV Parsing
+- LinkedIn Parsing
+- GitHub Parsing
+- Data Validation
+- Schema Validation
+- Data Normalization
+- Canonical Mapping
+- Merge Engine
+- Confidence Engine
+- Provenance Tracking
+- Projection Engine
 
 ---
 
-## Processing Pipeline
+## 📊 Candidate Intelligence
+
+- Candidate Summary
+- Skills Analysis
+- Education Timeline
+- Work Experience
+- Contact Details
+- Confidence Score
+- Candidate Analytics Dashboard
+
+---
+
+## 📈 Analytics Dashboard
+
+- Total Candidates
+- Skills Distribution
+- Experience Analysis
+- Education Statistics
+- Candidate Confidence Metrics
+- Recruitment Insights
+
+---
+
+# 🏗️ System Architecture
 
 ```
-Upload Sources
-      |
-      v
-Source Detection
-      |
-      v
-Resume Parser  →  CSV Parser  →  GitHub Parser  →  LinkedIn Parser
-      |              |               |                  |
-      +--------------+---------------+------------------+
-      |
-      v
-Canonical Mapping
-      |
-      v
-Normalization
-      |
-      v
-Validation
-      |
-      v
-Merge Engine (priority-based)
-      |
-      v
-Confidence Engine
-      |
-      v
-Provenance Tracker
-      |
-      v
-Projection Engine
-      |
-      v
-Schema Validation
-      |
-      v
-Final Canonical Profile
+                Resume Upload
+                      │
+                      ▼
+          Source Detection Stage
+                      │
+                      ▼
+             Resume Parser
+                      │
+                      ▼
+          Data Normalization
+                      │
+                      ▼
+         Schema Validation
+                      │
+                      ▼
+           Merge Engine
+                      │
+                      ▼
+        Confidence Engine
+                      │
+                      ▼
+      Provenance Tracking
+                      │
+                      ▼
+      Unified Candidate Profile
+                      │
+                      ▼
+         PostgreSQL Database
+                      │
+                      ▼
+      React Analytics Dashboard
 ```
 
 ---
 
-## Merge Strategy
+# 🛠️ Tech Stack
 
-Priority (highest to lowest):
+## Frontend
 
-1. Recruiter CSV
-2. ATS JSON
-3. Resume
-4. LinkedIn
-5. GitHub
-6. Recruiter Notes
-
-Rules:
-
-- Choose the highest confidence value
-- If confidence is equal, choose highest priority source
-- Never invent missing values
-- Unknown values become `null`
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
 
 ---
 
-## Confidence Engine
+## Backend
 
-Confidence for every field is calculated from:
-
-- Source reliability
-- Validation success
-- Agreement across sources
-- Normalization success
-- Merge quality
-
-An overall profile confidence score is also generated.
+- FastAPI
+- SQLAlchemy
+- Pydantic
+- Uvicorn
 
 ---
 
-## Provenance Tracking
+## Database
 
-Every tracked field includes:
-
-- Original value
-- Normalized value
-- Source
-- Transformation method
-- Timestamp
-- Confidence
+- PostgreSQL
 
 ---
 
-## Project Structure
+## DevOps
+
+- Docker
+- Docker Compose
+- Nginx
+
+---
+
+## Document Processing
+
+- pdfplumber
+- python-docx
+
+---
+
+# 📂 Project Structure
 
 ```
-.
-├── src/                          # Frontend source
-│   ├── App.tsx                   # App router
-│   ├── main.tsx                  # Entry point
-│   ├── components/
-│   │   ├── ui/                   # shadcn/ui components
-│   │   └── layout/               # AppLayout, Sidebar, TopNav
-│   ├── pages/                    # All page components
-│   ├── stores/                   # Zustand stores
-│   └── lib/                      # API client, utilities
-├── backend/                      # Backend source
-│   ├── app/
-│   │   ├── core/                 # Config, database
-│   │   ├── models/               # SQLAlchemy models
-│   │   ├── schemas/              # Pydantic schemas
-│   │   ├── services/             # Business logic
-│   │   ├── pipeline/             # Pipeline engine
-│   │   │   ├── stages/           # Individual stages
-│   │   │   └── pipeline.py       # Pipeline runner
-│   │   └── api/                  # FastAPI routers
-│   ├── main.py                   # FastAPI entry
+TalentFusion AI
+│
+├── backend
+│   ├── app
+│   │   ├── api
+│   │   ├── core
+│   │   ├── models
+│   │   ├── pipeline
+│   │   ├── schemas
+│   │   ├── services
+│   │   └── utils
+│   │
 │   ├── requirements.txt
-│   └── Dockerfile
+│   └── main.py
+│
+├── src
+│   ├── components
+│   ├── pages
+│   ├── hooks
+│   ├── services
+│   └── styles
+│
+├── nginx
+│
 ├── docker-compose.yml
-├── Dockerfile
-├── nginx/
-│   └── default.conf
+│
 └── README.md
 ```
 
 ---
 
-## API Endpoints
+# ⚙️ Installation
 
-| Method | Path | Description |
-|--------|------|-------------|
-| POST | /api/v1/candidates/ | Create candidate |
-| GET | /api/v1/candidates/ | List candidates |
-| GET | /api/v1/candidates/{id} | Get candidate |
-| POST | /api/v1/candidates/{id}/pipeline | Run pipeline |
-| GET | /api/v1/candidates/{id}/logs | Get logs |
-| POST | /api/v1/candidates/upload/resume | Upload resume |
-| POST | /api/v1/candidates/upload/csv | Upload CSV |
-| POST | /api/v1/candidates/upload/json | Upload JSON |
-| GET | /api/v1/analytics/summary | Analytics summary |
-| GET | /api/v1/health | Health check |
+## Clone Repository
+
+```bash
+git clone https://github.com/yourusername/TalentFusion-AI.git
+
+cd TalentFusion-AI
+```
 
 ---
 
-## Dashboard Pages
-
-| Page | Path | Description |
-|------|------|-------------|
-| Dashboard | `/` | Stats, recent activity |
-| Upload | `/upload` | Multi-source input + pipeline run |
-| Candidates | `/candidates` | Table with search & sort |
-| Pipeline | `/pipeline` | Animated pipeline execution |
-| Source Comparison | `/comparison` | Side-by-side source values |
-| Merge Decisions | `/merge` | Why each value was selected |
-| Canonical Profile | `/canonical` | Final profile with download |
-| Confidence | `/confidence` | Gauge charts, progress bars |
-| Provenance | `/provenance` | Timeline of transformations |
-| Logs | `/logs` | Structured execution logs |
-| Analytics | `/analytics` | Charts & metrics |
-| Settings | `/settings` | Pipeline configuration |
-
----
-
-## Testing
-
-### Backend (Pytest)
+## Backend Setup
 
 ```bash
 cd backend
+
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# Linux / macOS
+source venv/bin/activate
+
 pip install -r requirements.txt
-pytest
+
+uvicorn main:app --reload
 ```
 
-### Frontend (Jest)
+Backend runs at
 
-```bash
-npm test
+```
+http://localhost:8000
 ```
 
 ---
 
-## Deployment
+## Frontend Setup
 
-Single command deployment:
+```bash
+npm install
+
+npm run dev
+```
+
+Frontend runs at
+
+```
+http://localhost:5173
+```
+
+---
+
+# 🐳 Docker Deployment
+
+Run the complete application using Docker.
 
 ```bash
 docker compose up --build
 ```
 
-Components:
-- React frontend (port 5173)
-- FastAPI backend (port 8000)
-- PostgreSQL (port 5432)
-- Nginx reverse proxy (port 80)
-- Swagger / ReDoc documentation
+Services
+
+- Frontend
+- Backend
+- PostgreSQL
+- Nginx
 
 ---
 
-## License
+# 📦 API Endpoints
 
-MIT License
+## Candidate APIs
+
+| Method | Endpoint | Description |
+|----------|--------------------|-----------------------------|
+| POST | `/api/candidates/upload` | Upload Resume |
+| GET | `/api/candidates` | Get Candidates |
+| GET | `/api/candidates/{id}` | Get Candidate |
+| DELETE | `/api/candidates/{id}` | Delete Candidate |
+
+---
+
+## Analytics APIs
+
+| Method | Endpoint | Description |
+|----------|--------------------|-----------------------------|
+| GET | `/api/analytics` | Dashboard Analytics |
+| GET | `/api/analytics/skills` | Skills Analytics |
+| GET | `/api/analytics/experience` | Experience Statistics |
+
+---
+
+# 📸 Screenshots
+
+## Dashboard
+
+> Add screenshot here
+
+```
+/screenshots/dashboard.png
+```
+
+---
+
+## Candidate Profile
+
+> Add screenshot here
+
+```
+/screenshots/profile.png
+```
+
+---
+
+## Resume Upload
+
+> Add screenshot here
+
+```
+/screenshots/upload.png
+```
+
+---
+
+## Analytics
+
+> Add screenshot here
+
+```
+/screenshots/analytics.png
+```
+
+---
+
+# 🚀 Future Enhancements
+
+- AI Resume Ranking
+- Semantic Candidate Search
+- Job Description Matching
+- Resume Recommendation Engine
+- LLM-Based Candidate Summary
+- Interview Question Generator
+- Email Notifications
+- HR Management Dashboard
+- Multi-user Authentication
+- Cloud Deployment
+
+---
+
+# 🎯 Key Highlights
+
+- Multi-Stage AI Processing Pipeline
+- Intelligent Resume Parsing
+- Confidence Score Generation
+- Candidate Analytics Dashboard
+- Enterprise Architecture
+- Dockerized Deployment
+- FastAPI REST APIs
+- React + TypeScript Frontend
+- PostgreSQL Database
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create your feature branch
+
+```bash
+git checkout -b feature/NewFeature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push to GitHub
+
+```bash
+git push origin feature/NewFeature
+```
+
+5. Open a Pull Request
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👩‍💻 Author
+
+**Monica R**
+
+Computer Science Engineering Student
+
+AI • Machine Learning • Full Stack Development
+
+GitHub: https://github.com/Monicram
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, don't forget to star the repository!
+
+Made with ❤️ using FastAPI, React, TypeScript and PostgreSQL
+
+</div>
