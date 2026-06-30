@@ -1,5 +1,3 @@
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/fb7ea8a8-a2c9-4af3-9515-3018d27470d1" /><div align="center">
-
 # 🚀 TalentFusion AI
 
 ### AI-Powered Candidate Intelligence & Recruitment Automation Platform
@@ -327,9 +325,8 @@ Services
 ## Analytics
 
 
-
 ```
-/screenshots/analytics.png
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/d96da154-c27e-454e-b28f-69231c0c7a6d" />
 ```
 
 ---
