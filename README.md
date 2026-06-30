@@ -295,10 +295,8 @@ Services
 ## Dashboard
 
 
+<img width="1908" height="1077" alt="image" src="https://github.com/user-attachments/assets/da9105d2-7e69-4905-9197-48311447476f" />
 
-```
-/screenshots/dashboard.png
-```
 
 ---
 
@@ -306,9 +304,8 @@ Services
 
 
 
-```
-/screenshots/profile.png
-```
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/9e727a03-7e5b-43f2-a9db-32f0fad0e9ff" />
+
 
 ---
 
@@ -316,18 +313,14 @@ Services
 
 
 
-```
-/screenshots/upload.png
-```
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/af742287-94d1-4919-885b-4387201f686d" />
+
 
 ---
 
 ## Analytics
 
-
-```
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/d96da154-c27e-454e-b28f-69231c0c7a6d" />
-```
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/12202469-236d-414d-9cde-8806c626d6b3" />
 
 ---
 
