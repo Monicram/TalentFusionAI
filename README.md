@@ -88,34 +88,34 @@ The candidate information passes through multiple intelligent stages:
                 Resume Upload
                       │
                       ▼
-          Source Detection Stage
+            Source Detection Stage
                       │
                       ▼
-             Resume Parser
+                 Resume Parser
                       │
                       ▼
-          Data Normalization
+              Data Normalization
                       │
                       ▼
-         Schema Validation
+                Schema Validation
                       │
                       ▼
-           Merge Engine
+                 Merge Engine
                       │
                       ▼
-        Confidence Engine
+              Confidence Engine
                       │
                       ▼
-      Provenance Tracking
+              Provenance Tracking
                       │
                       ▼
-      Unified Candidate Profile
+            Unified Candidate Profile
                       │
                       ▼
-         PostgreSQL Database
+              PostgreSQL Database
                       │
                       ▼
-      React Analytics Dashboard
+            React Analytics Dashboard
 ```
 
 ---
@@ -162,37 +162,7 @@ The candidate information passes through multiple intelligent stages:
 
 ---
 
-# 📂 Project Structure
-
-```
-TalentFusion AI
-│
-├── backend
-│   ├── app
-│   │   ├── api
-│   │   ├── core
-│   │   ├── models
-│   │   ├── pipeline
-│   │   ├── schemas
-│   │   ├── services
-│   │   └── utils
-│   │
-│   ├── requirements.txt
-│   └── main.py
-│
-├── src
-│   ├── components
-│   ├── pages
-│   ├── hooks
-│   ├── services
-│   └── styles
-│
-├── nginx
-│
-├── docker-compose.yml
-│
-└── README.md
-```
+# 📂 Demo Video
 
 ---
 
@@ -324,21 +294,6 @@ Services
 
 ---
 
-# 🚀 Future Enhancements
-
-- AI Resume Ranking
-- Semantic Candidate Search
-- Job Description Matching
-- Resume Recommendation Engine
-- LLM-Based Candidate Summary
-- Interview Question Generator
-- Email Notifications
-- HR Management Dashboard
-- Multi-user Authentication
-- Cloud Deployment
-
----
-
 # 🎯 Key Highlights
 
 - Multi-Stage AI Processing Pipeline
@@ -352,34 +307,6 @@ Services
 - PostgreSQL Database
 
 ---
-
-# 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-2. Create your feature branch
-
-```bash
-git checkout -b feature/NewFeature
-```
-
-3. Commit your changes
-
-```bash
-git commit -m "Added new feature"
-```
-
-4. Push to GitHub
-
-```bash
-git push origin feature/NewFeature
-```
-
-5. Open a Pull Request
-
----
-
 
 # 👩‍💻 Author
 
