@@ -1,4 +1,4 @@
-<div align="center">
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/fb7ea8a8-a2c9-4af3-9515-3018d27470d1" /><div align="center">
 
 # 🚀 TalentFusion AI
 
@@ -296,7 +296,7 @@ Services
 
 ## Dashboard
 
-> Add screenshot here
+
 
 ```
 /screenshots/dashboard.png
@@ -306,7 +306,7 @@ Services
 
 ## Candidate Profile
 
-> Add screenshot here
+
 
 ```
 /screenshots/profile.png
@@ -316,7 +316,7 @@ Services
 
 ## Resume Upload
 
-> Add screenshot here
+
 
 ```
 /screenshots/upload.png
@@ -326,7 +326,7 @@ Services
 
 ## Analytics
 
-> Add screenshot here
+
 
 ```
 /screenshots/analytics.png
