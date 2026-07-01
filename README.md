@@ -4,12 +4,7 @@
 
 Transform resumes into structured candidate profiles using an intelligent multi-stage AI pipeline with confidence scoring, validation, data normalization, and analytics.
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi)
-![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql)
-![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker)
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python) ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi) ![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql) ![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker)
 
 </div>
 
@@ -162,9 +157,6 @@ The candidate information passes through multiple intelligent stages:
 
 ---
 
-# 📂 Demo Video
-
----
 
 # ⚙️ Installation
 
